@@ -1,0 +1,33 @@
+@use 'vars';
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500);
+
+.button-404 {
+  font-weight: bold;
+  background-color:var(--hospital-green);
+  color: var(--gray);
+  font-size: 1.2em;
+  text-decoration: none;
+  border: 1px solid #efefef;
+  padding: .5em;
+  border-radius: 8px;
+  float: left;
+  margin: 0 0 0 -168px;
+  left: 50%;
+  position: relative;
+  transition: all .3s linear;
+  margin-top: 5em;
+}
+
+.text-404 {
+  font-size: 2em;
+  text-align: center;
+  font-weight: 100;
+}
+
+.title-404 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  text-align: center;
+  font-size: 10em;
+  font-weight: 100;
+}

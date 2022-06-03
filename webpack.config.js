@@ -8,6 +8,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+    publicPath: '/',
   },
   resolve: {
     extensions: ['.js', '.jsx'],
@@ -54,5 +55,6 @@ module.exports = {
     },
     compress: true,
     port: 3000,
+    historyApiFallback: true,
   }
 };
