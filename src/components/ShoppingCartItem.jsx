@@ -16,4 +16,4 @@ const ShoppingCartItem = () => {
   );
 };
 
-export default ShoppingCartItem;
+export { ShoppingCartItem };

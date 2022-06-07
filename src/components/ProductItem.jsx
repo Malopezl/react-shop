@@ -15,8 +15,8 @@ const ProductItem = ({ product }) => {
           <p>{product.title}</p>
         </div>
         <figure
-          onClick={(item) => {
-            addToCart(item);
+          onClick={() => {
+            addToCart(product);
           }}
         >
           <img src={addToCartImage} alt="" />
