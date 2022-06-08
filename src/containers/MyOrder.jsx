@@ -4,7 +4,7 @@ import { OrderItem } from "@components/OrderItem";
 import "@styles/MyOrder.scss";
 import arrow from "@icons/flechita.svg";
 
-const MyOrder = () => {
+const MyOrder = ({ setToggleOrders, toggleOrders }) => {
   const { state } = React.useContext(AppContext);
 
   const sumTotal = () => {
@@ -17,7 +17,13 @@ const MyOrder = () => {
   return (
     <aside className="MyOrder">
       <div className="title-container">
-        <img src={arrow} alt="arrow" />
+        <img
+          src={arrow}
+          alt="arrow"
+          onClick={() => {
+            setToggleOrders(!toggleOrders);
+          }}
+        />
         <p className="title">My order</p>
       </div>
       <div className="my-order-content">
