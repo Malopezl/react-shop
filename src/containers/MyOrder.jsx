@@ -18,6 +18,7 @@ const MyOrder = ({ setToggleOrders, toggleOrders }) => {
     <aside className="MyOrder">
       <div className="title-container">
         <img
+          className="more-clickable-area pointer"
           src={arrow}
           alt="arrow"
           onClick={() => {

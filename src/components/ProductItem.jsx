@@ -17,6 +17,7 @@ const ProductItem = ({ product }) => {
           <p>{product.title}</p>
         </div>
         <figure
+          className="more-clickable-area"
           onClick={() => {
             added ? removeFromCart(product) : addToCart(product);
             setAdded(!added);

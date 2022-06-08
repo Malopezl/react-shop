@@ -41,7 +41,7 @@ const Header = () => {
       <div className="navbar-right">
         <ul>
           <li
-            className="navbar-email"
+            className="more-clickable-area navbar-email pointer"
             onClick={() => {
               setToggle(!toggle);
             }}
@@ -54,7 +54,11 @@ const Header = () => {
               setToggleOrders(!toggleOrders);
             }}
           >
-            <img src={shoppingCart} alt="shopping cart" />
+            <img
+              className="more-clickable-area pointer"
+              src={shoppingCart}
+              alt="shopping cart"
+            />
             {state.cart.length > 0 ? <div>{state.cart.length}</div> : null}
           </li>
         </ul>

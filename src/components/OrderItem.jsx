@@ -14,6 +14,7 @@ const OrderItem = ({ product }) => {
       <p>{product.title}</p>
       <p>${product.price}</p>
       <img
+        className="more-clickable-area pointer"
         src={close}
         alt="close"
         onClick={() => {
