@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [
     "react",
@@ -14,6 +16,7 @@
   ],
   "author": "Marvin Lopez <lopez.marvin9@gmail.com>",
   "license": "MIT",
+  "homepage": "https//malopezl.github.io",
   "dependencies": {
     "@babel/core": "^7.18.2",
     "@babel/preset-env": "^7.18.2",
@@ -31,6 +34,7 @@
   },
   "devDependencies": {
     "css-loader": "^6.7.1",
+    "gh-pages": "^4.0.0",
     "mini-css-extract-plugin": "^2.6.0",
     "sass": "^1.52.1",
     "sass-loader": "^13.0.0",
